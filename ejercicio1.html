@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <title>Desafio 1 - Ejercicio 1</title>
+	</head>
+	<body>
+		<div class="banner">
+		  	<img alt="Imagen de JsS" class="imgJS" src="img/js.png">
+		  	<h1>Ejercicio 1: Numero Mayor</h1>
+		</div>
+		<a class="btnRegresar" href="index.html">Regresar</a>
+	 	<main class="flex-shrink-0">
+		 	<div class="container ejercicio1">
+		 		<center>
+			 		<label>Ingrese dimesion de matriz</label>
+			 		<input placeholder="Fila" type="number" id="txtFilas" name="txtFilas" >
+			 		<input placeholder="Columna" type="number" id="txtColumnas" name="txtColumnas">
+			 		<button value="Crear" name="btnCrear" class="btn btn-primary" id="btnCrear" onclick="crear_matriz()">Crear</button>
+
+			 		<table id="tableBody" class="table table-bordered">
+			 		</table>
+
+			 		<p id="numeros"></p>
+		 		</center>
+		  	</div>
+	  	</main>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/funciones1.js"></script>
+	</body>
+</html>
