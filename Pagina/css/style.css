@@ -1,0 +1,178 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.col-6{
+  margin-bottom: 30px;
+}
+
+.label input{
+  float: right;
+  width: 60%;
+}
+
+.btn{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 200px;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botones{
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+  width: 100%;
+  height: 300px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.caja1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  background: black;
+}
+
+.caja1:hover{
+  background: #949696;
+}
+
+.caja2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  background: black;
+}
+
+.caja2:hover{
+  background: #949696;
+}
+
+.banner{
+  width: 100%;
+  height: 100px;
+  background: #E4E4E4;
+  border: 1px solid #C9C9C9;
+}
+
+.banner h1{
+  margin-top:20px ;
+  text-align: center;
+}
+
+.imgJS{
+  position: absolute;
+  width: 6em;
+}
+
+.libro{
+  position: absolute;
+  width: 6em;
+}
+
+label{
+  color: #4E7AE8;
+  font-weight: bold;
+}
+
+input{
+  margin: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+table{
+  margin-top: 30px;
+}
+
+.btnRegresar{
+  float: right;
+  background: #4878EF;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btnRegresar:hover{
+  color: white;
+  background: #3764D4;
+}
+
+main{
+  margin-top: 40px;
+}
+
+button{
+   width: 100px;
+}
+
+@media (max-width: 550px){
+
+  .banner{
+    height: 200px;
+    align-content: center;
+  }
+
+  .imgJS{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .libro{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  label{
+    display: block;
+  }
+  button{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 800px){
+
+  .ejercicio1 label{
+    display: block;
+  }
+  .ejercicio1 button{
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 450px){
+
+  .ejercicio1 input{
+    display: block;
+  }
+}
