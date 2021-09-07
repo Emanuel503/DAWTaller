@@ -30,6 +30,7 @@ function mostrarMatriz(matriz, col){
 	var col;
 	var numeromenor = matriz[0][0];
 	var numeromayor = matriz[0][0];
+	var celdamayor, celdamenor;
 
 	tabla="";
 	for (i=0; i<matriz.length; i++){
@@ -44,12 +45,18 @@ function mostrarMatriz(matriz, col){
 				numeromayor=matriz[i][j];
 			}
 
-			tabla+="<td>"+matriz[i][j]+"</td>";
+			tabla+="<td class='celda"+i+j+"' id='celda"+i+j+"'>"+matriz[i][j]+"</td>";
 		}
 
 		tabla+="</tr>";
 	}
-	
+
 	document.getElementById("tableBody").innerHTML=tabla;
 	document.getElementById("numeros").innerHTML="<b>Numero mayor:</b> "+numeromayor+" <br><b>Numero menor:</b> "+numeromenor;
+
+
+	//El color de celda no lo pude implementar, le asgine un id a cada celda y en las variables
+	//celdamayor y celdamenor tengo ese id del numero mayor y menor	pero al colocar la siguientes lineas me da error:(
+	//celdamayor.style.backgroundColor="green";
+	//celdamenor.style.backgroundColor="yellow";
 }
